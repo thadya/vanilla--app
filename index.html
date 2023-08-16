@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <title>Weather App</title>
 </head>
 <body>
@@ -18,17 +20,34 @@
     <div class="container">
         <div class="weather-app-van">
         <div class="weather-app">
-        <div class="forecast">
-        <H1>
-London
-        </H1>
+            <form id="citysearch-form" class="mb-3">
+        <div class="row">
+            <div class="col-9">
+ <input id="city"
+                type="text" 
+                autofocus="on" 
+                autocomplete="off"
+                   placeholder="Enter city... "
+                   style="height: 1cm"
+                   style=" border-radius: 5px;" 
+                   style="width: 10cm;" 
+                   style="box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;"/>
+               </div>
+               <div class="col-3">
+                <input type="submit" 
+                 class="btn btn-primary" 
+                 id="search-loc"
+                 value="search"
+                  style="width: 3cm;"/> 
+            </div>
+            </div>
+            </form>
+            <div class="forecast">
+            <h1 id="cityname" class="cityname"><strong> Chicago, IL, USA
+			</strong></h1> 
 <ul>
-    <li>
-Wednesday 13:56
-    </li>
-    <li>
-        clear
-    </li>
+    <li class="today" id="date"></li> 
+    <li id="description"></li>
 </ul>
 </div>
 <div class="row">
@@ -40,21 +59,21 @@ alt="clear"
 class="float-left"
 />
 <div class="float-left">
-<strong>12</strong><span class="units">°C | °F </span>
+<strong id="temperature"></strong><span class="units">°C |<a href="#"></a> °F </span>
 </div>
 </div>
 </div>
 <div class="col-6">
 
 <ul>
+    <div class="description" id="description"></div>
+	<div class="one">
     <li>
-        precipitation: 0%
+        <div class="humidity"> Humidity <span id="humidity"></span> % </div>
     </li>
     <li>
-        Humidity: 73%
-    </li>
-    <li>
-        Wind: 2km/h
+        <div class="wind"> Wind <span id="wind"></span> km/h
+        </div>
     </li>
 </ul>
 </div>
