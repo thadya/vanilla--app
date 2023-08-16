@@ -1,6 +1,5 @@
 .weather-app{
-    max-width: 600px ;
-    margin: 30px auto;
+   
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 5px;
@@ -27,4 +26,27 @@ font-size: 16px;
 ul{
     margin: 0;
     padding: 0;
+}
+.weather-app-van{
+    max-width: 600px ;
+    margin: 30px auto;
+}
+.forecast{
+    margin-bottom: 20px;
+}
+.temp img{
+    margin-right: 5px;
+    height: 64;
+    width: 64;
+}
+.temp strong{
+    font-size: 64px;
+    color: rgb(33,33,33);
+    font-weight: 400;
+    line-height: 1;
+}
+.temp .units{
+position: relative;
+font-size: 16px;
+top: -32px;
 }
