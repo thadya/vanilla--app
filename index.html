@@ -23,8 +23,9 @@
             <form id="citysearch-form" class="mb-3">
         <div class="row">
             <div class="col-9">
- <input id="city"
-                type="text" 
+             <input 
+             id="city-input"
+                type="search" 
                 autofocus="on" 
                 autocomplete="off"
                    placeholder="Enter city... "
@@ -34,81 +35,69 @@
                    style="box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;"/>
                </div>
                <div class="col-3">
-                <input type="submit" 
-                 class="btn btn-primary" 
-                 id="search-loc"
+                <input 
+                type="submit" 
+                 class="btn btn-primary 3-100" 
                  value="search"
                   style="width: 3cm;"/> 
             </div>
             </div>
         </form>
-            <div class="forecast">
-            <h1 id="cityname" class="cityname"><strong> Chicago, IL, USA
+            <div class="overview">
+            <h1> <strong> id="city">
 			</strong></h1> 
 <ul>
-    <li class="today" id="date"></li> 
+    <li>Latest update: <span id="date"></span></li> 
     <li id="description"></li>
 </ul>
 </div>
 <div class="row">
 <div class="col-6">
-    <div class="d-flex temp">
-<img
-id="mainïcon"
-src=""
-alt=""
-class="float-left">
-<div class="float-left">
+    <div class="d-flex weather-temperature">
+<img src="" alt="clear" id="icon" />
+
 <strong id="temperature"></strong>
-<span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+<span class="units">
+<a href="#" id="celsius-link" class="active">°C</a> |
+ <a href="#" id="fahrenheit-link">°F</a></span>
 </div>
 </div>
 </div>
 <div class="col-6">
 
 <ul>
-    <div class="description" id="description"></div>
-	<div class="one">
-    <li>
-        <div class="humidity"> Humidity <span id="humidity"></span> % </div>
-    </li>
-    <li>
-        <div class="wind"> Wind <span id="wind"></span> km/h
-        </div>
+    
+    <li>Humidity: <span id="humidity"></span></li>
+    <li id="metric"> Wind: <span id="wind"></span> km/h
     </li>
 </ul>
 </div>
-</div>
 <div class="weather-forecast" id="forest">
-<div class="row">
+<div class="row" id="Days">
 <div class="col-2">
-
-    <div class="row" id="Days">
-        <div class="col-2">
-          
+          Fri
           <br />
-          <div class="weather-forecast-date">Fri</div>
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="clouds" height="80px" />
+          <img src="https://previews.123rf.com/images/carbo82/carbo821206/carbo82120600075/14181786-icon-rainy-weather.jpg" alt="rainy" height="80px" />
         </div>
         <div class="col-2">
-            <div class="weather-forecast-date">Sat</div>
+            Sat
           <br />
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="rain" height="80px" />
+          <img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1-1-580x375.jpg" alt="cloudy" height="80px" />
         </div>
         <div class="col-2">
-            <div class="weather-forecast-date">Sun</div>
+            Sun
           <br />
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="drizzle" height="80px" />
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/weather/weather-icon.png" alt="drizzle" height="80px" />
         </div>
         <div class="col-2">
-            <div class="weather-forecast-date">Mon</div>
+            Mon
           <br />
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="clear" height="80px" />
+          <img src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-8.png" alt="clear" height="80px" />
         </div>
         <div class="col-2">
-            <div class="weather-forecast-date">Tue</div>
+            Tue
           <br />
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="mist" height="80px" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyf9W2v03SQzBAPkqVXjxj--1PQWUM22MRL0vyc67uWjP19WG-TTQABtTYu_aAjtpJQA&usqp=CAU" alt="mist" height="80px" />
         </div>
     </div>
 </div>
