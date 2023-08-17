@@ -41,7 +41,7 @@
                   style="width: 3cm;"/> 
             </div>
             </div>
-            </form>
+        </form>
             <div class="forecast">
             <h1 id="cityname" class="cityname"><strong> Chicago, IL, USA
 			</strong></h1> 
@@ -54,12 +54,13 @@
 <div class="col-6">
     <div class="d-flex temp">
 <img
-src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
-alt="clear"
-class="float-left"
-/>
+id="mainïcon"
+src=""
+alt=""
+class="float-left">
 <div class="float-left">
-<strong id="temperature"></strong><span class="units">°C |<a href="#"></a> °F </span>
+<strong id="temperature"></strong>
+<span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
 </div>
 </div>
 </div>
@@ -78,52 +79,49 @@ class="float-left"
 </ul>
 </div>
 </div>
+<div class="weather-forecast" id="forest">
+<div class="row">
+<div class="col-2">
+
+    <div class="row" id="Days">
+        <div class="col-2">
+          
+          <br />
+          <div class="weather-forecast-date">Fri</div>
+          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="clouds" height="80px" />
+        </div>
+        <div class="col-2">
+            <div class="weather-forecast-date">Sat</div>
+          <br />
+          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="rain" height="80px" />
+        </div>
+        <div class="col-2">
+            <div class="weather-forecast-date">Sun</div>
+          <br />
+          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="drizzle" height="80px" />
+        </div>
+        <div class="col-2">
+            <div class="weather-forecast-date">Mon</div>
+          <br />
+          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="clear" height="80px" />
+        </div>
+        <div class="col-2">
+            <div class="weather-forecast-date">Tue</div>
+          <br />
+          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="mist" height="80px" />
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <small>
     Open-source code by Thato Gumbo
 </small>
 </div>
 </div>
-
-
-
-
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    </div>
+  </div>
 <script src="src/app.js"></script>
 </body>
 </html>

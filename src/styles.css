@@ -51,3 +51,8 @@ position: relative;
 font-size: 16px;
 top: -32px;
 }
+di#vforecast.weather-forecast{
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
